@@ -1,0 +1,131 @@
+WEB SCRAPPING:web scrapping is a general term for techniques involving automating the gathering of data from a website.different tasks of web scrapping are downloading images or information off a website
+
+THINGS TO UNDERSTAND TO PERFORM WEB SCRAPPING EFFECTIVELY:
+1.RULES OF WEB SCRAPPING:
+a)always try to get permission before scrapping
+b)if you make too many scrapping attempts or requests your IP address could get blocked!!..u won't be able to visit that website with ur normal browser.
+c)some sites automatically block scrapping softwares
+
+2.LIMITATIONS OF WEB SCRAPPING:
+a)in geberal way every website is unique, which means every web scrapping script is unique.
+b)a slight change or update to a website may completely break ur web scrapping script
+
+3.MAIN FRONT-END COMPONENTS OF A WEBSITE:
+a)FRONT-END:when a web browser loads a website what the user sees is the front-end part of the wesite. here we will learn about html,css and java script.
+i)HTML is used to create basic structure and content of a webpage
+ii)CSS is used for the design and style of a web page, where elements are placed and how it looks
+iii)JavaScript is used to define the interactive elements of a webpage
+b)for effective web scrapping we only need to have basic understanding of HTML and CSS
+c)python can view these HTML and CSS files programmatically and then extract information from the website
+
+
+HTML:
+1.HTML is hypertext markup language and is present on every single website on internet
+2.u can right click on a website and select "view page source" to get an example
+3.HTML syntax
+
+<!DOCTYPE html>                                  -----------------------#general html doc tag
+<html>                                           ----------------#starting tag
+    <head>                                       ----------------#head start
+     <title>Title on Browser Tab</title>                 ---------------#title tags         
+    </head>                                      ----------------#head end(with frward slash)
+    <body>
+        <h1> Website Header </h1>                        ----------------#header tags
+        <p> Some Paragraph </p>                          -----------------#paragraph tags
+    <body>
+</html>                                         ------------------#ending tag-is denoted with a forward slash(diff bw start and end tag)
+
+
+4.head portion of HTML file contains certain high level of information like title of browser tab,heading or connection to things like another CSS file
+5.body of HTML file contains vast majority of info that the website is going to display
+
+
+CSS:
+1.CSS stands for Cascading style sheets and it gives style to a website such as changing fonts and colours
+2.CSS uses tags to define what HTML elemsnts will be styled
+3.CSS link in HTML file:
+
+
+<!DOCTYPE html>  
+<html>  
+     <head>
+    <link rel="stylesheet" href="styles.css">        ----#CSS linked file-here link rel means link relation and href means reference here
+    <title>Some Title</title>
+    </head>
+    <body>
+        <p id=‘para2’> Some Text </p>              -------#the body of HTML file is linked to the particular para of CSS file
+    <body>
+</html>
+
+
+4.when any HTML file is linked to CSS then it contains certain ids and classes
+5.the .css file syntax:(for id)
+
+
+#para2 {
+    color: red;
+}
+
+
+6.here the hashtag in CSS file clearly defines that it is id and id are only used for HTML file once.
+7.CSS link in HTML file:
+
+
+<!DOCTYPE html>  
+<html>  
+     <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Some Title</title>
+    </head>
+    <body>
+        <p class=‘cool’> Some Text </p>
+    <body>
+</html>
+
+
+8.the .css file syntax:(for class)
+
+
+.cool {
+    color: red;
+    font-family: verdana; 
+}
+
+
+9.the dot in CSS file clearly defines that it is class and class can be used in HTML file multiple times
+10.larger CSS code:
+
+
+p{                                    -----#p-defines that all paragraph elements in HTML must be of this colour,font and font-size
+    color: red;
+    font-family: courier;
+    font-size: 160%;
+}
+.someclass{                            ------------#./period-defines that the single paragraph must be of this code
+    color: green;
+    font-family: verdana;
+    font-size: 300%;
+}
+#someid{
+    color: blue;                      ----------#hashtag-defines that a single element in HTML file must be of this colour
+}
+
+CONCLUSION:
+1.HTML contains the information
+2.CSS contains the styling
+3.we can use HTML and CSS tags to locate specific information on a page
+
+
+THINGS REQUIRED FOR WEB SCRAPPING:
+In anaconda prompt powershell install typing the following:
+1.conda install requests
+2.conda install lxml
+3.conda install bs4
+then type exit 
+
+
+WEB SCRAPPING TECHNIQUES:
+1.first go to any wiki website or any other and right click on page
+2.then go to source code and see the source code written in HTML
+3.then to inspect any element we can right click on image then go to inspect
+
