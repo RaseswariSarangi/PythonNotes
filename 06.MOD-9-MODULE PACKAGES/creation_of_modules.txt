@@ -1,0 +1,1 @@
+for creation and importing of modules refer to the pythonProjects of pycharm_projects under the MOD_9-modules nd packages files
