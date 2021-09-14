@@ -1,0 +1,59 @@
+1.Firstly we have to create two files with name Cap.py and test_Cap.py under pythonProjects of pycharm_projects.
+2.secondly we have to write the following code in Cap.py
+
+  def cap_text(text):
+    '''
+    input a string
+    return: the capitalized string
+    '''
+    return text.capitalize()
+
+
+cap_text("hello")
+
+
+3.then write the following code in test_Cap.py file for unit testing
+
+import unittest
+import Cap
+
+
+class TestCap(unittest.TestCase):
+
+    def test_one_word(self):
+        text = 'python'
+        result = Cap.cap_text(text)
+        self.assertEqual(result, 'Python')
+
+    def test_multiple_words(self):
+        text = 'raseswari sarangi'
+        result=Cap.cap_text(text)
+        self.assertEqual(result, 'Raseswari Sarangi')
+
+    if __name__ == '__main__':
+        unittest.main()
+        
+
+4.then we will run these two tests in pycharm terminal by entering: python test_Cap.py
+5.if it will not run in terminal then we will prefer to simply run the test_Cap.py file.
+6.the after unittesting we will encounter an error
+7.then we will make changes in Cap.py file
+8.the changes made in Cap.py file is:
+  
+  def cap_text(text):
+    '''
+    input a string
+    return: the capitalized string
+    '''
+    return text.title()
+
+
+cap_text("hello")
+
+
+9.then again we will run the test_Cap.py file.
+10.then it will show no error and run successfully.
+
+
+****NOTE******
+WE WILL ONLY MAKE CHANGES IN THE FIRST FILE THE SECOND FILE WILL REMAIN THE SAME AS BEFORE.

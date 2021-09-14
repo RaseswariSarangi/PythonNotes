@@ -1,0 +1,39 @@
+1.First create a simple1.py file under pythonProjects of pycharm_projects.
+2.then write a wrong code and the wrong code is:
+
+WRONG CODE:
+a=5
+b=6
+print(a+B)
+
+
+3.check the wrong code in pycharm terminal by entering the following line:
+  pylint simple1.py -r y
+  
+4.after entering this we will encounter our rate out of 10 and basic tables to show our error.
+5.then rectify the code and follow the same steps as 1 and 2.
+
+RECTIFIED CODE
+'''
+a very simple script
+'''
+
+
+def my_func():
+    '''
+    a simple function
+    '''
+
+    first = 2
+    second = 3
+    print(first)
+    print(second)
+
+
+my_func()
+
+
+6.then we will see that our score has improved a lot from the previous score.
+
+****NOTE*****
+THE FILE MUST BE IN pythonProjects OF pycharm_project FOR EASY ACESS IN TERMINAL.
